@@ -109,7 +109,8 @@ col1, col2 = st.columns([1, 1.2], gap="large")
 
 with col1:
     st.markdown("### 📋 Araç Özellikleri")
-    marka = st.selectbox("Marka", ["Fiat", "Renault", "Volkswagen", "Ford", "Mercedes-Benz", "BMW", "Audi", "Toyota", "Honda", "Peugeot"])
+    # HYUNDAI BURAYA EKLENDİ
+    marka = st.selectbox("Marka", ["Fiat", "Renault", "Volkswagen", "Ford", "Mercedes-Benz", "BMW", "Audi", "Toyota", "Honda", "Hyundai", "Peugeot"])
     seri = st.text_input("Seri (Örn: Focus, Megane, Albea)", value="Egea")
     model_adi = st.text_input("Model Paketi (Örn: 1.4 Fire Urban)", value="1.4 Fire")
     km = st.number_input("Kilometre", min_value=0, max_value=1000000, step=5000, value=85000)
@@ -247,4 +248,3 @@ st.markdown("""
   </div>
 </div>
 """, unsafe_allow_html=True)
-            
