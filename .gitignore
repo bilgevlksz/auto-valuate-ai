@@ -1,0 +1,33 @@
+# Environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+catboost_info/
+.DS_Store
+
+# Local credentials and settings
+.env
+.env.*
+.streamlit/secrets.toml
+kaggle.json
+
+# Raw data, feature caches and generated model artifacts
+data/
+dataset/
+runs/
+*.csv
+*.parquet
+*.npy
+*.npz
+*.zip
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.onnx
+*.cbm
+
+# Keep the existing inference artifact visible to git.
+!catboost_vit_log_modeli.cbm
